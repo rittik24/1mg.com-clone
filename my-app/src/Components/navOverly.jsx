@@ -10,6 +10,7 @@ import Img_5 from '../Components/images/login_img_5.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+
 export const Overly = ({setOverly,mode,setFalse}) => {
 
   const [isLogin, setIsLogin] = useState(mode);

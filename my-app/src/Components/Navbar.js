@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "../Components/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import CartLogo from "../Components/images/Cart.png";
-import { Overly } from "../Components/navOverly";
+import { Overly } from "./nav_Overly";
 import Address from "../Components/images/Crosshair.png";
 import Location from "../Components/images/Placeholder.png";
 import Search from "../Components/images/search (1).png";

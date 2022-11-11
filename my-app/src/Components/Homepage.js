@@ -4,11 +4,11 @@ import { health, topSellingProducts, topSlidingImage } from "../Components/Const
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "@fontsource/clear-sans";
-// // import ProductsAndBrandsBox from "./ProductsAndBrandsBox";
-// // import ProductsCard from "./Reusesable/ProductsCard";
-// // import BrandsCard from "./Reusesable/BrandsCard";
-// import ProductsAndBrandsBox from "./ProductsAndBrandsBox";
-// import Description from "./Reusesable/Description";
+// import ProductsAndBrandsBox from "../Components/ProductsAndBrandsBox";
+import ProductsCard from "../Components/ProductsCard";
+import BrandsCard from "../Components/BrandsCard";
+import ProductsAndBrandsBox from "../Components/ProductsAndBrandsBox";
+
 const Homepage = () => {
   return (
     <Box fontFamily="Clear Sans">
@@ -17,7 +17,7 @@ const Homepage = () => {
         <Box w={"70%"}>
           <AliceCarousel
             autoPlay
-            autoPlayInterval="5000"
+            autoPlayInterval="2000"
             disableButtonsControls="true"
             disableDotsControls="true"
           >
@@ -33,7 +33,7 @@ const Homepage = () => {
           >
             <Image
               h="100%"
-              src="https://onemg.gumlet.io/a_ignore,w_480,h_200,c_fit,q_auto,f_auto/1ef0c014-ca9f-413e-a11b-c6e19fc8f0c7.png"
+              src="https://onemg.gumlet.io/a_ignore,w_480,h_200,c_fit,q_auto,f_auto/f62e9238-d4c6-4c5b-9493-2535f6f57205.png"
             />
           </Link>
         </Box>
@@ -56,12 +56,12 @@ const Homepage = () => {
       {/* End */}
 
       {/* Brands and Products */}
-      {/* <BrandsCard something={health} /> */}
-      {/* <ProductsAndBrandsBox /> */}
+      
+      <ProductsAndBrandsBox />
+      <BrandsCard something={health} />
+      <ProductsCard something={topSellingProducts} />
 
-      {/* <ProductsCard something={topSellingProducts} /> */}
-
-      {/* <Description /> */}
+     
     </Box>
   );
 };

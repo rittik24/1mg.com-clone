@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../Components/nav_Overly.css";
+import "./nav_Overly.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Img_1 from '../Components/images/login_img_1.png';
@@ -9,7 +9,6 @@ import Img_4 from '../Components/images/login_img_4.png';
 import Img_5 from '../Components/images/login_img_5.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
 
 export const Overly = ({setOverly,mode,setFalse}) => {
 

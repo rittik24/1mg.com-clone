@@ -8,6 +8,9 @@ import Location from "../Components/images/Placeholder.png";
 import Search from "../Components/images/search (1).png";
 import { city } from "./listCity";
 
+
+
+
 const Navbar = () => {
   const [overly, setOverly] = useState(false);
   const [isSignUp, setIsSigUp] = useState(false);
@@ -18,12 +21,10 @@ const Navbar = () => {
     setOverly(true);
     setIsLogin(true);
   };
-
   const openSignUpOverly = () => {
     setOverly(true);
     setIsSigUp(true);
   };
-
   return (
     <>
       {overly && isLogin && (

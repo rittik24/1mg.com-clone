@@ -1,18 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
+import { Routes, Route } from 'react-router-dom';
 import Homepage from './Components/Homepage'
 import Footer from './Components/Footer'
 import Upperfooter from './Components/Upperfooter';
-import dropdownItem from './Components/NavbarDrop'
+import Navbar from './Components/Navbar/Navbar';
+import AllRoutes from './Components/AllRoutes';
+// import Login from './Components/Routes/Login';
+// import AllRoutes from './Components/AllRoutes';
+
 function App() {
   return (
     <div className="App">
+
      <Navbar/>
-     <Homepage/>
+     {/* <Login/> */}
+     {/* <Homepage/> */}
+     <AllRoutes/>
      <Upperfooter/>
      <Footer/>
-     <dropdownItem/>
+     
+     
+     
     </div>
   );
 }

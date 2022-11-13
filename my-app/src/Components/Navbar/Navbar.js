@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import "../Components/Navbar.css";
+import "../Navbar/Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import CartLogo from "../Components/images/Cart.png";
-import { Overly } from "./nav_Overly";
-import Address from "../Components/images/Crosshair.png";
-import Location from "../Components/images/Placeholder.png";
-import Search from "../Components/images/search (1).png";
+import CartLogo from "../images/Cart.png";
+// import { Overly } from "../Overly_nav/nav_Overly";
+import Address from "../images/Crosshair.png";
+import Location from "../images/Placeholder.png";
+import Search from "../images/search (1).png";
 import { city } from "./listCity";
-
-
-
-
+import nav_dropdown_items from "../Navbar/nav_dropdown_items"
 const Navbar = () => {
   const [overly, setOverly] = useState(false);
   const [isSignUp, setIsSigUp] = useState(false);
@@ -21,18 +18,20 @@ const Navbar = () => {
     setOverly(true);
     setIsLogin(true);
   };
+
   const openSignUpOverly = () => {
     setOverly(true);
     setIsSigUp(true);
   };
+
   return (
     <>
-      {overly && isLogin && (
-        <Overly setOverly={setOverly} mode={true} setFalse={setIsLogin} />
+      {/* {overly && isLogin && (
+        // <Overly setOverly={setOverly} mode={true} setFalse={setIsLogin} />
       )}
       {overly && isSignUp && (
-        <Overly setOverly={setOverly} mode={false} setFalse={setIsSigUp} />
-      )}
+        // <Overly setOverly={setOverly} mode={false} setFalse={setIsSigUp} />
+      )} */}
       <div className="nav_body">
         <div className="nav_container">
           <div className="nav_content">
@@ -40,13 +39,13 @@ const Navbar = () => {
               <div className="nav_left-logo">
                 <h3>
                   <Link to="/" ><img
-        src="https://www.1mg.com/images/tata_1mg_logo.svg"
+        src="https://image.shutterstock.com/image-vector/rmg-logo-design-vector-icon-260nw-1781659523.jpg"
         alt="TAta_img"
       /></Link>
                 </h3>
               </div>
               <div className="nav_left-links">
-                <div>
+                <div href>
                   <NavLink
                     activeClassName="active"
                     className="left-link"
@@ -107,15 +106,28 @@ const Navbar = () => {
                 <div className="nav_right-links_auth">
                   <div
                     className="nav_right-links_auth__login"
-                    onClick={openLoginOverly}
+                    // onClick={openLoginOverly}
                   >
-                    Login
+                    <NavLink
+                    //  activeClassName="active"
+                     className="left-link"
+                     to="/login"
+                    >
+                     Login
+                     </NavLink>
                   </div>
                   <div
                     className="nav_right-links_auth__signup"
-                    onClick={openSignUpOverly}
+                    // onClick={openSignUpOverly}
                   >
-                    Sign Up
+                    <NavLink
+                    //  activeClassName="active"
+                     className="left-link"
+                     to="/login"
+                    >
+                      Sign Up
+                     </NavLink>
+                   
                   </div>
                 </div>
                 <div className="nav_right-links_offers">
@@ -200,7 +212,7 @@ const Navbar = () => {
 
       <div className="nav_dropdown_body">
         <div className="nav_dropdown_body_container">
-          
+          <nav_dropdown_items/>
         </div>
       </div>
     </>

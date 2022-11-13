@@ -39,7 +39,7 @@ const Navbar = () => {
               <div className="nav_left-logo">
                 <h3>
                   <Link to="/" ><img
-        src="https://image.shutterstock.com/image-vector/rmg-logo-design-vector-icon-260nw-1781659523.jpg"
+        src="https://scontent.fccu31-1.fna.fbcdn.net/v/t39.30808-6/314742126_3414808192075939_2139891738767372054_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=E1mS6W-zs8IAX-dfdNF&_nc_ht=scontent.fccu31-1.fna&oh=00_AfDynkdfANuRKJL05ZqZvluIBmVTRXu1oYRrYbnmPEwIFg&oe=6375B9AB"
         alt="TAta_img"
       /></Link>
                 </h3>
@@ -58,7 +58,7 @@ const Navbar = () => {
                   <NavLink
                     activeClassName="active"
                     className="left-link"
-                    to="/Lab"
+                    to="/"
                   >
                     LAB TEST
                   </NavLink>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   <NavLink
                     activeClassName="active"
                     className="left-link"
-                    to="/online-doctor-consultation"
+                    to="/"
                   >
                     CONSULT DOCTORS
                   </NavLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   <NavLink
                     activeClassName="active"
                     className="left-link"
-                    to="/coronavirus-covid19"
+                    to="/"
                   >
                     COVID-19
                   </NavLink>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <NavLink
                     activeClassName="active"
                     className="left-link"
-                    to="/ayurveda"
+                    to="/"
                   >
                     AYURVEDA
                   </NavLink>
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <NavLink
                     activeClassName="active"
                     className="left-link"
-                    to="/subscriptions"
+                    to="/"
                   >
                     CARE PLAN
                   </NavLink>

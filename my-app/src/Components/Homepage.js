@@ -4,7 +4,6 @@ import { health, topSellingProducts, topSlidingImage } from "../Components/Const
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "@fontsource/clear-sans";
-// import ProductsAndBrandsBox from "../Components/ProductsAndBrandsBox";
 import ProductsCard from "../Components/ProductsCard";
 import BrandsCard from "../Components/BrandsCard";
 import ProductsAndBrandsBox from "../Components/ProductsAndBrandsBox";

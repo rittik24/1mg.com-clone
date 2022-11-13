@@ -7,8 +7,8 @@ TATA 1mg.com is an e-commerce web application that widely provides e-pharmacy, d
 
 Tech Stack
 
-React.Js
-Material UI
-HTML
-CSS
-JavaScript
+React.Js |
+HTML |
+CSS |
+JavaScript |
+Material UI |
